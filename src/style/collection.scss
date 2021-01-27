@@ -1,0 +1,20 @@
+.collection{
+    background-color: #E6E3C4;
+    
+
+    &-container {
+        padding: 80px 0;
+        
+        &__line {
+            border: 1px solid #998431;
+            width: 1110px;
+        }
+
+        &-elements {
+            margin: 60px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+    }
+}

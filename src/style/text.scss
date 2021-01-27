@@ -1,0 +1,37 @@
+.text {
+  background-color: #282828;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &-box {
+    border: 3px solid #c4c4c4;
+    
+    &__title {
+      font-family: "Playfair Display", serif;
+      text-align: center;
+      color: #ffffff;
+      font-size: 36px;
+      margin-top: 50px;
+    }
+    &__line {
+      width: 160px;
+      border: 1px solid #ffffff;
+      margin: 20px auto 40px auto;
+    }
+
+    &__text {
+      font-family: "Montserrat", sans-serif;
+      color: white;
+      font-weight: 400;
+      text-align: center;
+      padding: 0 187px;
+    }
+    
+    &__picture {
+        width: 160px;
+        height: 160px;
+        margin: 50px auto 60px auto;
+        background: center / cover no-repeat url("../svgs/wineglass.svg");
+    }
+  }
+}
