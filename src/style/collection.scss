@@ -1,20 +1,93 @@
-.collection{
-    background-color: #E6E3C4;
-    
+.collection {
+  background-color: #e6e3c4;
 
-    &-container {
-        padding: 80px 0;
-        
-        &__line {
-            border: 1px solid #998431;
-            width: 1110px;
-        }
+  &-container {
+    padding: 80px 0;
 
-        &-elements {
-            margin: 60px 0;
-            display: flex;
-            justify-content: space-between;
-        }
-        
+    &__line {
+      border: 1px solid #998431;
+      width: 1110px;
     }
+
+    &-elements {
+      margin: 60px 0;
+      display: flex;
+      justify-content: space-between;
+
+      &-info {
+        max-width: 445px;
+
+        &__title {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+        }
+
+        &__name {
+          margin-top: 30px;
+          font-family: "Playfair Display", serif;
+          font-size: 36px;
+          font-weight: bold;
+          color: #282828;
+        }
+
+        &__line {
+          width: 160px;
+          border: 1px solid #282828;
+          margin: 30px 0 0 0;
+        }
+
+        &__text {
+          margin: 30px 0;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+        }
+
+        &__button {
+          padding: 15px 30px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          text-transform: uppercase;
+          text-align: center;
+          letter-spacing: 0.05em;
+          background: #998431;
+          border: none;
+          outline: none;
+          color: white;
+
+          &:hover {
+            background: #7a6a2d;
+            transition: 0.5s;
+          }
+        }
+      }
+
+      &-pictures {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 540px;
+
+        &__first{
+          width: 540px;
+          height: 500px;
+          background: center / cover no-repeat url("../svgs/collection/first.svg");
+        }
+
+        &__second {
+          width: 255px;
+          height: 228px;
+          background: center / cover no-repeat url("../svgs/collection/second.svg");
+        }
+
+        &__third {
+          width: 255px;
+          height: 228px;
+          background: center / cover no-repeat url("../svgs/collection/third.svg");
+        }
+      }
+    }
+  }
 }

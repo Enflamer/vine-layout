@@ -1,0 +1,36 @@
+.wines {
+  display: flex;
+
+  &-year {
+    padding: 26px 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border-right: 1px solid #282828;
+    border-top: 1px solid #282828;
+  }
+
+  &-about {
+    padding: 10px 30px 15px 30px;
+    border-top: 1px solid #282828;
+
+    &__name {
+      color: #282828;
+      font-family: "Playfair Display", serif;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    &__info {
+      margin-top: 5px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #282828;
+    }
+  }
+
+  &-new {
+    border-top: none;
+  }
+}

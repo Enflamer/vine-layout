@@ -1,0 +1,106 @@
+.record {
+  background-color: #282828;
+  padding: 130px 0 100px 0;
+
+  &-container {
+    border: 3px solid #c4c4c4;
+    position: relative;
+
+    &__title {
+      left: 50%;
+      transform: translateX(-50%);
+      top: -45px;
+      z-index: 1;
+      position: absolute;
+      color: white;
+      font-size: 36px;
+      font-family: "Playfair Display", serif;
+      font-weight: bold;
+      line-height: 54px;
+      padding: 10px 50px;
+      background-color: #282828;
+    }
+
+    &__first {
+      top: -45px;
+      left: -35px;
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      background: center / cover no-repeat url("../svgs/records/first.svg");
+    }
+
+    &__second {
+      right: -53px;
+      top: -60px;
+      position: absolute;
+      width: 260px;
+      height: 200px;
+      background: center / cover no-repeat url("../svgs/records/second.svg");
+    }
+
+    &__line {
+      width: 118px;
+      margin: 65px auto 40px auto;
+      border: 1px solid #ffffff;
+    }
+
+    &__text {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: white;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    &-customer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 50%;
+      margin: 80px auto 50px auto;
+
+      &__input {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #FFFFFF;;
+        background: #282828;
+        color: white;
+        line-height: 30px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+      }
+
+      &__name {
+        width: 45%;
+      }
+
+      &__phone {
+        width: 45%;
+      }
+
+      &__place {
+        margin-top: 40px;
+        width: 100%;
+      }
+    }
+
+    &__button {
+      display: block;
+      margin: 0 auto 75px auto;
+      width: 50%;
+      background: #282828;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 10px 0;
+      border: 1px solid white;
+    }
+  }
+}
