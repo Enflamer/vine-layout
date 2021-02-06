@@ -70,22 +70,48 @@
         flex-wrap: wrap;
         width: 540px;
 
-        &__first{
+        &__first {
           width: 540px;
           height: 500px;
-          background: center / cover no-repeat url("../svgs/collection/first.svg");
+          background: center / cover no-repeat
+            url("../svgs/collection/first.svg");
         }
 
         &__second {
           width: 255px;
           height: 228px;
-          background: center / cover no-repeat url("../svgs/collection/second.svg");
+          background: center / cover no-repeat
+            url("../svgs/collection/second.svg");
         }
 
         &__third {
           width: 255px;
           height: 228px;
-          background: center / cover no-repeat url("../svgs/collection/third.svg");
+          background: center / cover no-repeat
+            url("../svgs/collection/third.svg");
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .collection {
+    &-container {
+      
+      &-elements {
+        
+        
+        flex-direction: column;
+
+        &-info {
+          width: 100%;
+          margin: 0 auto;
+        }
+        
+
+        &-pictures {
+          display: none;
         }
       }
     }

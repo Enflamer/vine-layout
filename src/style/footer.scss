@@ -1,19 +1,89 @@
 .footer {
-    background: #998431;
-    display: flex;
-    flex-direction: column;
+  background: #998431;
+  display: flex;
+  flex-direction: column;
 
-    &-navbar {
+  &-navbar {
+    display: flex;
+    margin: 50px 0 0 0;
+    border-top: 1px solid white;
+
+    &__item {
+      text-transform: uppercase;
+      color: white;
+      padding: 20px 30px;
+      margin: 0 auto;
+    }
+  }
+
+  &-info {
+    display: flex;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+
+    &__item {
+      padding: 20px 60px 20px 60px;
+      margin: 0 auto;
+      font-family: "Montserrat", sans-serif;
+      color: white;
+      font-weight: 600;
+      font-size: 14px;
+      border-right: 1px solid white;
+      
+     
+      &:last-child {
+          border-right: none;
+      }
+    }
+
+    &-social {
         display: flex;
-        margin: 50px 0;        
-        border-top: 1px solid white; 
-        
-        &__item {
-            color: white;
-            padding: 20px 30px;
-            margin: 0 auto;
-            
-            
+       
+        justify-content: space-between;
+
+        &__youtube {
+            margin-right: 36px;
+            width: 26px;
+            height: 26px;
+            background: center / cover no-repeat url("../svgs/footer/first.svg");
+        }
+
+        &__vk {
+            margin-right: 42px;
+            width: 24px;
+            height: 24px;
+            background: center / cover no-repeat url("../svgs/footer/second.svg");
+        }
+
+        &__facebook {
+            margin-right: 18px;
+            width: 26px;
+            height: 26px;
+            background: center / cover no-repeat url("../svgs/footer/third.svg");
         }
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    &-navbar {
+      flex-direction: column;
+      flex-wrap: wrap;
+      
+      &__item {
+        padding: 10px 30px;
+      }
+    }
+
+    &-info {
+      flex-direction: column;
+
+      &__item {
+        border-right: none;
+        padding: 10px;
+      }
+    }
+  }
 }

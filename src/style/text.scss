@@ -5,7 +5,7 @@
 
   &-box {
     border: 3px solid #c4c4c4;
-    
+
     &__title {
       font-family: "Playfair Display", serif;
       text-align: center;
@@ -26,12 +26,22 @@
       text-align: center;
       padding: 0 187px;
     }
-    
+
     &__picture {
-        width: 160px;
-        height: 160px;
-        margin: 50px auto 60px auto;
-        background: center / cover no-repeat url("../svgs/wineglass.svg");
+      width: 160px;
+      height: 160px;
+      margin: 50px auto 60px auto;
+      background: center / cover no-repeat url("../svgs/wineglass.svg");
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .text {
+    &-box {
+      &__text {
+        padding: 0px;
+      }
     }
   }
 }

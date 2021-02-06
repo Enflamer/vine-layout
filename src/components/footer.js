@@ -15,14 +15,14 @@ export default function footer() {
           <div className="footer-navbar__item">Контакты</div>
         </div>
         <div className="footer-info">
-          <div className="footer-info__name">Винный бутик le corte</div>
-          <div className="footer-info__phone">8 (812) 123-45-67</div>
-          <div className="footer-info-social">
+          <div className="footer-info__item">Винный бутик le corte</div>
+          <div className="footer-info__item">8 (812) 123-45-67</div>
+          <div className="footer-info__item footer-info-social">
             <div className="footer-info-social__youtube"></div>
             <div className="footer-info-social__vk"></div>
             <div className="footer-info-social__facebook"></div>
           </div>
-          <div className="footer-info__corp">© le-corte.ru</div>
+          <div className="footer-info__item">© le-corte.ru</div>
         </div>
       </div>
     </div>
